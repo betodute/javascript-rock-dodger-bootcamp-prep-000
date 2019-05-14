@@ -82,13 +82,13 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft(DODGER) {
-    window.requestAnimationFrame(function() {
+  window.requestAnimationFrame(function() {
     const left = positionToInteger(DODGER.style.left);
       if (left > 0) {
-        DODGER.style.left = `${left - 4}px`;
+         DODGER.style.left = `${left - 4}px`;
       }
-    }
-    );
+  }
+  );
 }
 
 function moveDodgerRight(DODGER) {
