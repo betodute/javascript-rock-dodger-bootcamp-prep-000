@@ -68,27 +68,21 @@ function endGame() {
 }
 
 function moveDodger(e) {
-    const code = e.which
+    const code = e.which;
     if ([LEFT_ARROW, RIGHT_ARROW].indexOf(code) > -1) {
-        e.preventDefault()
-        e.stopPropagation()
+        e.preventDefault();
+        e.stopPropagation();
     }
     
     if (code === LEFT_ARROW) {
-    moveDodgerLeft()
+    moveDodgerLeft();
     } else if (code === RIGHT_ARROW) {
-    moveDodgerRight()
+    moveDodgerRight();
     }
 }
 
-var leftNumbers = dodger.style.left.replace('px', '');
-var  left = parseInt(leftNumbers, 10);
-
-
 function moveDodgerLeft(DODGER) {
-    var leftNumbers = dodger.style.left.replace('px', '');
-    var left = parseInt(leftNumbers, 10);
-
+    
     function goLeft() {
       dodger.style.left = `${left - 4}px`;
 
