@@ -81,7 +81,7 @@ function moveDodger(e) {
     }
 }
 
-function moveDodgerLeft(DODGER) {
+function moveDodgerLeft() {
   window.requestAnimationFrame(function() {
     const left = positionToInteger(DODGER.style.left);
       if (left > 0) {
@@ -91,7 +91,7 @@ function moveDodgerLeft(DODGER) {
   );
 }
 
-function moveDodgerRight(DODGER) {
+function moveDodgerRight() {
   window.requestAnimationFrame(function() {
     const left = positionToInteger(DODGER.style.left);
     if (left < 360) {
