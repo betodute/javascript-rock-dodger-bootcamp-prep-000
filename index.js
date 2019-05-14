@@ -94,7 +94,7 @@ function moveDodgerLeft(DODGER) {
 
 
 function moveDodgerRight(DODGER) {
-    
+  window.requestAnimationFrame(function() {
 
 
 function positionToInteger(p) {
